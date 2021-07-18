@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADVERTISERS PAGE 2</title>
+    <script src="https://kit.fontawesome.com/7c7dcfab0a.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    font-family:sans-serif,"Poppins";
+    background-color: #FFFFFF;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.header{
+	width: 100%;
+	height: 4.5rem;
+	background: #E7E8EB;
+	mix-blend-mode: multiply;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 10px;
+	padding-left: 31px;
+	padding-right: 33px;
+	margin-bottom: 18px;
+}
+.searchbox{
+    position:absolute;
+    left:475px;
+    width:350px;
+    height:85px;
+    top:27px;
+     }
+     input{
+        
+        height:32px;
+        width:90%;
+        padding:0px 25px;
+    }
+    .text{
+        margin-left:630px;
+        margin-top: 20px;
+        font-size:smaller;
+    }
+    .navigation-bar{
+        width:100%;
+        height:61px;
+        margin-top: 72px;
+        background-color:#233A6C;
+        position:absolute;
+        font-style: normal;
+        font-weight: 200;
+        left:0px;
+        top:0px;
+        right:0px;
+        text-align:center;
+    }
+    
+    
+    .navbar li{
+        color:white;
+        display:inline;
+    }
+    .navbar li a{
+        color:white;
+        text-decoration: none;
+        padding: 44px 33px;
+        display:inline;
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-style: normal;
+        }
+    
+    .navbar li a:hover{
+        text-decoration: black;
+    }
+    .icon{
+        margin-right: 90px;
+    }
+    select{
+        font-size: 14px;
+        padding: 6px;
+        position: absolute;
+        top:26.2px;
+        left:423.5px;
+        background-color: #E0E0E0;
+    }
+    .sicon{
+        position:absolute;
+        left:315px;
+        top:0px;
+        color: #E5E5E5;
+        cursor: pointer;
+    }
+    .sidebar{
+        float:left;
+        width:118px;
+        height:1088px;
+        background-color:#E7E8EB;
+        margin-left: 118px;
+        margin-top: 16px;
+    }
+    .grid{
+        position: absolute;
+        top:200px;
+        left:135px;
+        cursor: pointer;
+        color:#D00000;
+    }
+    .campaign{
+        position: absolute;
+        top:280px;
+        left:135px;
+        cursor: pointer;
+    }
+    .coupan{
+        position:absolute;
+        top:380px;
+        left:145px;
+    }
+    .chat{
+        position: absolute;
+        top:470px;
+        left:155px;
+    }
+    .traffic{
+        position: absolute;
+        top:560px;
+        left:150px;
+    }
+    .report{
+        position: absolute;
+        top:650px;
+        left:148px;
+    }
+    .arpdau{
+        position:absolute;
+        top:740px;
+        left:140px;
+    }
+    .user{
+        position:absolute;
+        top:830px;
+        left:155px;
+    }
+    .settings{
+        position:absolute;
+        top:920px;
+        left:145px;
+    }
+    .details{
+        position:absolute;
+        top:300px;
+        left:300px;
+    }
+    .chats{
+        position:absolute;
+        top:110px;
+        left:300px;
+    }
+    .campaigns{
+        position:absolute;
+        top:108px;
+        left:560px;
+    }
+    .btn1{
+        position:absolute;
+        background-color: #FCA311;
+        top:80px;
+        left:250px;
+        color:#233A6C;
+        font-size: 18px;
+        line-height: 27px;
+        font-style: normal;
+    }
+    .smallsearchbox{
+        position:absolute;
+    left:1035px;
+    width:250px;
+    height:85px;
+    top:81.5px;
+     }
+     input{
+        
+        height:31px;
+        width:90%;
+        padding:0px 25px;
+    }
+    .text{
+        margin-left:630px;
+        margin-top: 21px;
+        font-size:smaller;
+    }
+    .dropdown{
+        position: absolute;
+        left:518.5px;
+        top:55.25px;
+    }
+    .sicon2{
+        position: absolute;
+        left:237px;
+        top:0px;
+    }
+    .track{
+        float:left;
+        size:18px;
+        line-height: 27px;
+        font-weight: 500;
+        margin-left: 16px;
+        color:#595959;
+        cursor: pointer;
+    }
+    .btn2,.btn3,.btn4{
+        border:1px solid#DFDFDF;
+        border-radius: 7px;
+        padding: 8px 70px;
+    }
+    .campaign2{
+        position:absolute;
+        top:230px;
+        left:350px;
+    }
+    .barcharts{
+        position:absolute;
+        top:260px;
+        left:340px;
+    }
+    .campaign3{
+        position:absolute;
+        top:640px;
+        left:360px;
+    }
+    .trackcampaign{
+        position: absolute;
+        top:680px;
+        left:340px;
+    }
+    .footer{
+        position:absolute;
+        top:1450px;
+        width:100%;
+    }
+    
+</style>
+<body>
+     <div class="header">
+        <div class="headerlogo">
+            <img src="logo addekho.svg" alt="no image">
+        </div>
+        <form action="">
+            <select name="all" id="">
+                <option value="selection">All</option>
+            </select>
+        </form>
+        <div class="searchbox">
+            <input type="text"name="box" placeholder="Search for Online Store,Category,Brands and more">
+            <div class="sicon">
+                <img src="Search icon (2).svg" alt="no image">
+            </div>
+            
+        </div>
+        <div class="right">
+            <div class="text">
+                <h6>Refer and Earn | Help and Support |</h6>
+            </div>
+        </div>
+        <div class="icon">
+                <img src="Mask Group.svg" alt="no image">
+                <i class="fa fa-chevron-down"></i>
+              </div>
+        </div>
+        <div class="navigation-bar">
+            <ul class="navbar">
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Mobile Apps</a></li>
+                <li><a href="#">Merchants</a></li>
+                <li><a href="#">Publishers</a></li>
+                <li><a href="http://www.medicento.com/#aboutus">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                </ul>     
+          <div class="sidebar">
+             <div class="logo">
+             <img src="medicento.svg" alt="no image">
+            </div>
+             <div class="grid">
+             <a href="#"><img src="grid.svg" alt="no image"></a><br>
+             Dashboard
+            </div>
+            <div class="campaign">
+             <img src="Campaign.svg" alt="no image"><br>
+             Campaign
+            </div>
+            <div class="coupan">
+                <img src="Coupan.svg" alt="no image"><br>
+                Coupan
+            </div>
+            <div class="chat">
+             <img src="chat.svg" alt="no image"><br>
+             Chat
+            </div>
+            <div class="traffic">
+             <img src="traffic.svg" alt="no image"><br>
+             Traffic
+            </div>
+            <div class="report">
+            <img src="report.svg" alt="no image"><br>
+            Report
+        </div>
+             <div class="arpdau">
+             <img src="arpdau.svg" alt="no image"><br>
+             ARPDAU
+            </div>
+            <div class="user">
+             <img src="user.svg" alt="no image"><br>
+             User
+            </div>
+            <div class="settings">
+             <img src="settings.svg" alt="no image"><br>
+             Settings
+            </div>
+             <img src="" alt="">
+          </div>
+          <button class="btn1">
+              +New Campaign
+          </button><br><br><br><br><br>
+          <button class="btn2">
+            +Active campaign
+          </button>
+          <button class="btn3">
+          +Scheduled campaign
+          </button>
+          <button class="btn4">
+           +Previous Campaign
+          </button><br><br>
+          <div class="campaign2">
+          <h6>Track Ongoing Campaign</h6>
+        </div>
+          <div class="smallsearchbox">
+              <input type="text"placeholder="Search for Campaigns">
+              <div class="sicon2">
+                  <img src="searchbox.svg" alt="no image">
+              </div>
+          </div>
+          <div class="dropdown">
+              <select name="" id="">
+                  <option value="">Campaigns</option>
+              </select>
+          </div>
+          <div class="barcharts">
+              <img src="baarcharts.svg" alt="no image">
+          </div><br>
+          <div class="campaign3">
+          <h6>Track Campaign</h6>
+        </div>
+        <div class="trackcampaign">
+            <img src="track campaign.svg" alt="no image">
+        </div>
+        <div class="footer">
+            <img src="footer.svg" alt="no image">
+        </div>
+</body>
+</html>
